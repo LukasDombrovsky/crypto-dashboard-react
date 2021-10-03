@@ -1,0 +1,43 @@
+@import "../UI/variables";
+
+.mainPage {
+  img {
+    height: 8rem;
+    margin-top: 8rem;
+
+    @media #{$sm} {
+      height: 12rem;
+      margin-top: 0;
+    }
+    @media #{$md} {
+      height: 13rem;
+      margin-top: 0;
+    }
+    @media #{$lg} {
+      height: 16rem;
+      margin-top: 0;
+    }
+    @media #{$xl} {
+      height: 16rem;
+      margin-top: 0;
+    }
+    @media #{$xxl} {
+      height: 16rem;
+      margin-top: 0;
+    }
+  }
+  
+  .headline {
+    text-shadow: 5px 4px 5px #000;
+    font-weight: 700;
+    transform: scale(1,0.9);
+    text-align: center;
+    margin-top: 0.7rem;
+  }
+
+  hr {
+    border-top: 5px solid white;
+    width: 250px;
+    opacity: 1;  
+  }
+}
