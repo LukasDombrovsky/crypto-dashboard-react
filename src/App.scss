@@ -1,6 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: white;
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
+  text-align: center;
 }
+
+hr {
+  border-top: 5px solid white;
+  width: 250px;
+  opacity: 1;
+}
+
+// Container classes
+.container-750 {
+  max-width: 750px !important;
+}
+
+.container-1000 {
+  max-width: 1000px;
+}
+// Container classes - end
+
+// Element classes
+.heading {
+  text-shadow: 5px 4px 5px #000;
+  font-weight: 700;
+  transform: scale(1, 0.9);
+}
+// Element classes - end

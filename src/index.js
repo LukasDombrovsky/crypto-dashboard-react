@@ -6,12 +6,14 @@ import reportWebVitals from "./reportWebVitals";
 
 import { BrowserRouter } from "react-router-dom";
 import smoothScrollPolyfill from "smoothscroll-polyfill";
+import ScrollToTop from "./components/scrollToTop";
 
 smoothScrollPolyfill.polyfill();
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
+      <ScrollToTop />
       <App />
     </BrowserRouter>
   </React.StrictMode>,

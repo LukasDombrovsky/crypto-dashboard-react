@@ -1,18 +1,18 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { HashLink } from "react-router-hash-link";
+
 import Button from "../UI/Button";
 import SectionWithBgImage from "../UI/SectionWithBgImage";
-
 import classes from "./MainPage.module.scss";
 
-import logo from "../img/logo.png";
-import bgImage from "../img/cover.jpg";
-import { HashLink } from "react-router-hash-link";
+import logo from "../../img/logo.png";
+import bgImage from "../../img/cover.jpg";
 
 const MainPage = () => {
   return (
-    <SectionWithBgImage bgImage={bgImage} className={classes.mainPage} height="100vh">
+    <SectionWithBgImage bgImage={bgImage} className={classes.mainPage}>
       <Container>
         <Row>
           <Col className="d-flex justify-content-center">
@@ -21,7 +21,7 @@ const MainPage = () => {
         </Row>
         <Row>
           <Col className="d-flex justify-content-center">
-            <h1 className={`${classes.headline} display-2`}>
+            <h1 className="heading display-2" style={{ marginTop: "0.7rem" }}>
               Crypto Dashboard
             </h1>
           </Col>
@@ -44,13 +44,7 @@ const MainPage = () => {
         <Row>
           <Col className="d-flex justify-content-center">
             <HashLink to="/forecast">
-              <Button
-                as="div"
-                variant="primary"
-                href="#projects"
-                type="button"
-                size="lg"
-              >
+              <Button type="button">
                 <span>Forecast</span>
               </Button>
             </HashLink>
