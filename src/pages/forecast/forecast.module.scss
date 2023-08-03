@@ -1,9 +1,24 @@
-@import "../../variables";
+@import '../../variables';
 
 .forecast {
+  .headline {
+    text-shadow: 5px 4px 5px #000;
+    font-weight: 700;
+    transform: scale(1, 0.9);
+    text-align: center;
+    margin-top: 10rem;
+  }
+
+  hr {
+    border-top: 5px solid white;
+    width: 250px;
+    opacity: 1;
+  }
+
   tr,
   td,
   th {
+    text-align: center;
     color: black;
     text-transform: none;
     border: 3px solid #dedede;
@@ -35,5 +50,12 @@
   td {
     font-weight: 500;
     font-size: 1rem;
+  }
+
+  .signature {
+    font-size: 2rem;
+    margin: 5rem auto;
+    font-weight: 700;
+    text-align: center;
   }
 }
